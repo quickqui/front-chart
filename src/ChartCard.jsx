@@ -8,7 +8,7 @@ import { randomColor } from "randomcolor";
 
 const styles = {
   main: {
-    flex: "1"
+    flex: "1",
     // marginRight: "1em",
     // marginTop: 20
   },
@@ -16,11 +16,11 @@ const styles = {
     overflow: "inherit",
     textAlign: "right",
     padding: 16,
-    minHeight: 52
-  }
+    minHeight: 52,
+  },
 };
 
-const ChartCard = props => {
+const ChartCard = (props) => {
   const { data, classes, functionModel, ids } = props;
   const chartType = functionModel.parameters?.["chartType"] ?? "Bar";
   const sources = functionModel.parameters?.["sources"] ?? ["count"];
@@ -41,13 +41,13 @@ const ChartCard = props => {
   const labelsField = sources[0]?.label ?? "id";
   const yField = sources[0]?.y ?? "count";
   const cdata = {
-    labels: ids?.map(id => data[id]?.[labelsField]) ?? [],
+    labels: ids?.map((id) => data[id]?.[labelsField]) ?? [],
     datasets: [
       {
-        data: ids?.map(id => data[id]?.[yField]) ?? [],
-        backgroundColor: randomColor({ count: ids?.length ?? 0, alpha: 0.5 })
-      }
-    ]
+        data: ids?.map((id) => data[id]?.[yField]) ?? [],
+        backgroundColor: randomColor({ count: ids?.length ?? 0, alpha: 0.5 }),
+      },
+    ],
   };
   let com = Bar;
   if (chartType === "Doughnut") com = Doughnut;

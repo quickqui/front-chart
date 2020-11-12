@@ -9,7 +9,7 @@
     "chartjs": "^0.3.24",
     "randomcolor": "^0.5.4",
     "react": "^16.14.0",
-    "react-admin": "^3.8.5",
+    "react-admin": "^3.10.0",
     "react-chartjs-2": "^2.11.1"
   },
   "scripts": {

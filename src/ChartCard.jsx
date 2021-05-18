@@ -23,7 +23,7 @@ const styles = {
 const ChartCard = (props) => {
   const { data, classes, functionModel, ids } = props;
   const chartType = functionModel.parameters?.["chartType"] ?? "Bar";
-  const sources = functionModel.parameters?.["sources"] ?? ["count"];
+  const sources = functionModel.parameters?.["sources"] ;
 
   //TODO 实现更多的sources可能性。
   /*

@@ -2,8 +2,10 @@
   "name": "@quick-qui/front-chart",
   "version": "1.2.0",
   "dependencies": {
+    "@types/chart.js": "^2.9.32",
     "@types/randomcolor": "^0.5.3",
     "@types/react-chartjs-2": "^2.5.7",
+    "chart.js": "3.1",
     "randomcolor": "^0.6.2",
     "react-chartjs-2": "^3.0.3"
   },

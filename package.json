@@ -1,6 +1,6 @@
 {
   "name": "@quick-qui/front-chart",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
     "@types/chart.js": "^2.9.32",
     "@types/randomcolor": "^0.5.3",
